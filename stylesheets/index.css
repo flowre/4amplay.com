@@ -10,12 +10,6 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-  .responsive-row {
-    flex-direction: column;
-  }
-}
-
 .responsive-row > * {
   flex: 1 0 0;
   width: 75%;
@@ -24,6 +18,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .responsive-row {
+    flex-direction: column;
+  }
+
+  .responsive-row > * {
+    flex: 1 0 auto;
+  }
 }
 
 nav {
